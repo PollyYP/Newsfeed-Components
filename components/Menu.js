@@ -43,29 +43,35 @@ function menuMaker(array) {
   getUl.classList.add("menu-open");
   getMenu.appendChild(getUl);
 
-  let getLi1 = document.createElement("li");
-  getLi1.textContent = array[0];
-  getUl.appendChild(getLi1);
+  // let getLi1 = document.createElement("li");
+  // getLi1.textContent = array[0];
+  // getUl.appendChild(getLi1);
 
-  let getLi2 = document.createElement("li");
-  getLi2.textContent = array[1];
-  getUl.appendChild(getLi2);
+  // let getLi2 = document.createElement("li");
+  // getLi2.textContent = array[1];
+  // getUl.appendChild(getLi2);
 
-  let getLi3 = document.createElement("li");
-  getLi3.textContent = array[2];
-  getUl.appendChild(getLi3);
+  // let getLi3 = document.createElement("li");
+  // getLi3.textContent = array[2];
+  // getUl.appendChild(getLi3);
 
-  let getLi4 = document.createElement("li");
-  getLi4.textContent = array[3];
-  getUl.appendChild(getLi4);
+  // let getLi4 = document.createElement("li");
+  // getLi4.textContent = array[3];
+  // getUl.appendChild(getLi4);
 
-  let getLi5 = document.createElement("li");
-  getLi5.textContent = array[4];
-  getUl.appendChild(getLi5);
+  // let getLi5 = document.createElement("li");
+  // getLi5.textContent = array[4];
+  // getUl.appendChild(getLi5);
 
-  let getLi6 = document.createElement("li");
-  getLi6.textContent = array[5];
-  getUl.appendChild(getLi6);
+  // let getLi6 = document.createElement("li");
+  // getLi6.textContent = array[5];
+  // getUl.appendChild(getLi6);
+
+  array.map((elm) => {
+    let li = document.createElement("li");
+    li.textContent = elm;
+    getUl.appendChild(li);
+  });
 
   let menuBtn = document.querySelector("img.menu-button");
   menuBtn.addEventListener("click", () => {
